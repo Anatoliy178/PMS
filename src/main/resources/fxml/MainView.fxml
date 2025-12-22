@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -74,3 +75,81 @@
     </bottom>
 
 </BorderPane>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.example.pms.controller.MainController"
+            fx:id="rootPane"
+            stylesheets="/css/styles.css">
+
+    <!-- Верхняя панель -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" styleClass="header-bar">
+            <padding>
+                <Insets top="15" right="20" bottom="15" left="20"/>
+            </padding>
+            <children>
+                <Label text="📂 Система управления проектами" styleClass="header-label"/>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <Button text="+ New Task" onAction="#onNewTask" styleClass="primary-button"/>
+                <Button text="🌗 Сменить тему" onAction="#onToggleTheme" styleClass="theme-button"/>
+            </children>
+        </HBox>
+    </top>
+
+    <!-- Центральная часть -->
+    <center>
+        <TableView fx:id="taskTable" maxWidth="700" maxHeight="400" prefHeight="400" styleClass="main-table">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colName" text="Name" prefWidth="200">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="title"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colStatus" text="Status" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="status"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colDueDate" text="Due Date" prefWidth="120">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="deadline"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colActions" text="Actions" prefWidth="120"/>
+                <TableColumn fx:id="colCreatedAt" text="Создано" prefWidth="120">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="createdAt"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+
+    <!-- Нижняя панель -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_LEFT" styleClass="footer-bar">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <children>
+                <Label text="Filter by status:" styleClass="filter-label"/>
+                <ComboBox fx:id="statusFilter" prefWidth="150" styleClass="filter-combo"/>
+                <Button text="Apply" onAction="#onFilter" styleClass="filter-button"/>
+            </children>
+        </HBox>
+    </bottom>
+
+</BorderPane>
+>>>>>>> 7374e9df1023a33e84084b72cb55bf9260ed61ed

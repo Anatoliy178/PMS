@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <form id="registerForm">
     <input type="email" id="email" required />
     <input type="password" id="password" minlength="6" required />
@@ -20,3 +21,27 @@
         this.submit();
     });
 </script>
+=======
+<form id="registerForm">
+    <input type="email" id="email" required />
+    <input type="password" id="password" minlength="6" required />
+    <span id="formError" class="error"></span>
+    <button type="submit">Отправить</button>
+</form>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const email = this.email.value;
+        const password = this.password.value;
+
+        if (!email || password.length < 6) {
+            document.getElementById("formError").textContent = "Некорректный ввод!";
+            return;
+        }
+
+        // Валидация прошла, можно отправлять
+        this.submit();
+    });
+</script>
+>>>>>>> 7374e9df1023a33e84084b72cb55bf9260ed61ed

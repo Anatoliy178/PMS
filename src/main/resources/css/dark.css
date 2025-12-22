@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .root {
     -fx-base: #1e1e1e;
     -fx-background: #121212;
@@ -25,3 +26,32 @@
 .table-row-cell:filled:selected {
     -fx-background-color: #3c3c3c;
 }
+=======
+.root {
+    -fx-base: #1e1e1e;
+    -fx-background: #121212;
+    -fx-text-fill: #000000;
+    -fx-font-smoothing-type: gray;
+}
+
+/* Дополнительные улучшения */
+.label, .text, .table-cell, .list-cell {
+    -fx-text-fill: #000000;
+}
+
+.button {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #2e2e2e;
+    -fx-border-color: #444;
+}
+
+.text-field {
+    -fx-text-fill: #e0e0e0;
+    -fx-background-color: #1c1c1c;
+    -fx-prompt-text-fill: #888;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #3c3c3c;
+}
+>>>>>>> 7374e9df1023a33e84084b72cb55bf9260ed61ed

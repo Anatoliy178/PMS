@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Кнопка открытия -->
 <button id="openModal" aria-haspopup="dialog">Открыть форму</button>
 
@@ -18,3 +19,25 @@
         <button id="closeModal">Закрыть</button>
     </div>
 </div>
+=======
+<!-- Кнопка открытия -->
+<button id="openModal" aria-haspopup="dialog">Открыть форму</button>
+
+<!-- Модальное окно -->
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="modal hidden">
+    <div class="modal-content">
+        <h2 id="modalTitle">Регистрация</h2>
+        <form id="registerForm" novalidate>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" required minlength="6" />
+
+            <span id="formError" class="error" aria-live="polite"></span>
+            <button type="submit">Отправить</button>
+        </form>
+        <button id="closeModal">Закрыть</button>
+    </div>
+</div>
+>>>>>>> 7374e9df1023a33e84084b72cb55bf9260ed61ed
