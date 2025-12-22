@@ -1,0 +1,40 @@
+.root {
+    -fx-base: #ffffff;
+    -fx-background: #f5f5f5;
+    -fx-text-fill: #000000;
+}
+
+.label {
+    -fx-text-fill: #333;
+}
+
+.button {
+    -fx-background-color: #0078D7;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 12 6 12;
+}
+
+.table-view {
+    -fx-background-color: white;
+}
+
+.header-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #222;
+    -fx-font-weight: bold;
+}
+
+.theme-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #888;
+    -fx-border-radius: 4;
+    -fx-text-fill: #555;
+    -fx-padding: 4 10 4 10;
+}
+
+.theme-button:hover {
+    -fx-border-color: #0078D7;
+    -fx-text-fill: #0078D7;
+    -fx-cursor: hand;
+}
