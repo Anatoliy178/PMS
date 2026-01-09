@@ -1,0 +1,58 @@
+root = true
+
+# ---------------------------------------------------------
+# Общие настройки для всех файлов
+# ---------------------------------------------------------
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+# ---------------------------------------------------------
+# Java, Kotlin, XML, YAML, Properties
+# ---------------------------------------------------------
+[*.java]
+indent_size = 4
+
+[*.kt]
+indent_size = 4
+
+[*.xml]
+indent_size = 2
+
+[*.yml]
+indent_size = 2
+
+[*.yaml]
+indent_size = 2
+
+[*.properties]
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+# ---------------------------------------------------------
+# Markdown
+# ---------------------------------------------------------
+[*.md]
+trim_trailing_whitespace = false
+
+# ---------------------------------------------------------
+# Shell scripts (если есть)
+# ---------------------------------------------------------
+[*.sh]
+end_of_line = lf
+indent_style = space
+indent_size = 2
+
+# ---------------------------------------------------------
+# Windows-скрипты Maven Wrapper
+# ---------------------------------------------------------
+[mvnw]
+end_of_line = lf
+
+[mvnw.cmd]
+end_of_line = lf
