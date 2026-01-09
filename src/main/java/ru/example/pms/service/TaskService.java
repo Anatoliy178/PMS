@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package ru.example.pms.service;
 
 import lombok.RequiredArgsConstructor;
@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import ru.example.pms.model.Task;
 import ru.example.pms.model.TaskStatus;
 import ru.example.pms.repository.TaskRepository;
-import ru.example.pms.exception.ResourceNotFoundException;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -182,5 +181,5 @@ public class TaskService {
         return taskRepository.save(newTask);
     }
 
->>>>>>> 7374e9df1023a33e84084b72cb55bf9260ed61ed
+
 }

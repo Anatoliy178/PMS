@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -152,4 +152,4 @@
     </bottom>
 
 </BorderPane>
->>>>>>> 7374e9df1023a33e84084b72cb55bf9260ed61ed
+

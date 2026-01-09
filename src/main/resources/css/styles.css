@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Заголовок */
 .header-label {
     -fx-font-size: 20px;
@@ -44,25 +44,7 @@
     -fx-background-color: #c9302c;
 }
 
-=======
-/* Заголовок */
-.header-label {
-    -fx-font-size: 20px;
-    -fx-text-fill: #ffffff;
-}
 
-/* Основная кнопка */
-.primary-button {
-    -fx-background-color: #6c63ff;
-    -fx-text-fill: #ffffff;
-}
-
-/* Кнопки в ячейках */
-.icon-button {
-    -fx-background-color: transparent;
-    -fx-text-fill: #4e54c8;
-    -fx-cursor: hand;
-}
 
 /* Стиль таблицы */
 .table-view {
@@ -90,4 +72,4 @@
     -fx-background-color: #c9302c;
 }
 
->>>>>>> 7374e9df1023a33e84084b72cb55bf9260ed61ed
+

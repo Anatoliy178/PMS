@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .modal {
     position: fixed;
     top: 0; left: 0;
@@ -21,27 +21,3 @@
     color: crimson;
     margin-top: 10px;
 }
-=======
-.modal {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex; justify-content: center; align-items: center;
-}
-
-.modal-content {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 400px;
-    animation: fadeIn 0.3s ease;
-}
-
-.hidden { display: none; }
-
-.error {
-    color: crimson;
-    margin-top: 10px;
-}
->>>>>>> 7374e9df1023a33e84084b72cb55bf9260ed61ed
