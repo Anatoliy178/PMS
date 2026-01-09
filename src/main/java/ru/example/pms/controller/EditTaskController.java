@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package ru.example.pms.controller;
 
 // Импортируем компоненты JavaFX и модели
