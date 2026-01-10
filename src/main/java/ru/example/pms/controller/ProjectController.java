@@ -46,17 +46,3 @@ public class ProjectController {
         return ResponseEntity.ok(projectService.getAllProjects());
     }
 }
-
-=======
-package ru.example.pms.controller;
-
-// Импорты для работы с Lombok и Spring
-import lombok.RequiredArgsConstructor; // Аннотация для автоматического создания конструктора
-import org.springframework.http.ResponseEntity; // Класс для формирования HTTP ответа
-import org.springframework.web.bind.annotation.*; // Аннотации для REST контроллеров
-import ru.example.pms.model.Project; // Модель проекта
-import ru.example.pms.service.ProjectService; // Сервис для работы с проектами
-
-import java.util.List; // Стандартный список Java
-
-
